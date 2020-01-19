@@ -1,7 +1,14 @@
+#Operaciones basicas entre números complejos
+#Autor: Julian Camacho
+#Enero de 2020
+
 import sys
 import math
 
 def suma(cu, cd):
+    
+    """(list, list) -> list 
+    Suma entre dos numero complejos"""
 
     a = cu[0] + cd[0]
     b = cu[1] + cd[1]
@@ -11,6 +18,9 @@ def suma(cu, cd):
     return r
     
 def multi(cu, cd):
+    
+    """(list, list) -> list 
+    Producto entre dos numero complejos"""
 
     a = cu[0]*cd[0] - cu[1]*cd[1]
     b =  cu[0]*cd[1] + cu[1]*cd[0]
@@ -20,6 +30,9 @@ def multi(cu, cd):
     return r
 
 def resta(cu, cd):
+    
+    """(list, list) -> list 
+    Resta entre dos numero complejos"""
 
     a = cu[0] - cd[0]
     b = cu[1] - cd[1]
@@ -29,6 +42,9 @@ def resta(cu, cd):
     return r
 
 def  cociente(cu, cd):
+    
+    """(list, list) -> list 
+    Cociente entre dos numero complejos"""
 
     a = (cu[0]*cd[0] + cu[1]*cd[1]) / (cu[1] ** 2 + cd[1] ** 2 )
     b = (cu[1]*cd[0] - cu[0]*cd[1]) / (cu[1] ** 2 + cd[1] ** 2)
@@ -39,16 +55,25 @@ def  cociente(cu, cd):
 
 def modulo(c):
     
+    """(list) -> list 
+    Modulo de un número complejo"""
+    
     r = (c[0] ** 2 + c[1] ** 2) ** 0.5
     
     return r
 
 def conju(c):
     
+    """(list) -> list 
+    Conjugado de un número complejo"""
+    
     r = [c[0], c[1] * -1]
     return r
 
 def polares(c):
+    
+    """(list) -> list 
+    Dado un numero complejo (Representacion en coordenadas cartecianas) se convertira a cordenadas polares de la forma (p,o°)"""
     
     p = (c[0] ** 2 + c[1] ** 2) ** 0.5
     gra = math.atan(c[1] / c[0])
@@ -58,6 +83,9 @@ def polares(c):
     return r
 
 def nice_print(rst):
+    
+    """(list) -> none 
+    Funcion para inprimir en su forma estandas (a+bi) las operaciones entre complejos"""
 
     for i in rst:
 
