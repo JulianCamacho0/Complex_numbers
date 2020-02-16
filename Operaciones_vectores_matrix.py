@@ -98,6 +98,31 @@ def mult_vector_esca (c, v):
         
     return r
 
+def producto_interno(v_one, v_two):
+
+    r = [0,0]
+    v_adjunto= []
+
+    for i in v_one:
+        v_adjunto.append(conju(i))
+
+    for j in range(len(v_two)):
+        r = suma(r, multi(v_two[j], v_adjunto[j]))
+
+    return r
+
+def norma_vector(v):
+    
+    r = producto_interno(v,v)
+    norma = r[0] **(1/2)
+
+    return norma
+
+def distancia_vectores(v_one,v_two):
+
+    r = norma_vector(suma_vectores(v_one, inverso_vecom(v_two)))
+    print (r)
+
 #--------------------- Operacion Matrices complejas --------------------------
 
 def suma_matrices(m_one, m_two):
@@ -163,8 +188,7 @@ def matriz_adjunta(m):
     return r
 
 def producto_matrix(m,n):
-    ma = [[[0,0] for j in range(len(n[0][0]))] for i in range(len(m))]
-
+    ma = [[[0,0] for j in range(len(n[0]))] for i in range(len(m))]
     for i in range(len(m)):
         for j in range(len(n[0])):
             for k in range(len(n)):
@@ -172,38 +196,57 @@ def producto_matrix(m,n):
     return ma
 
 def accion_matrix(m,n):
+#El elemento m es el vector mientras que el elemnto n es la matriz de tamaño compatible
+    
     ma = [[0,0] for j in range(len(n))]
-
     for i in range(len(m)):
         for j in range(len(n)):
             for k in range(len(n)):
                 ma[i] = suma(ma[i], multi(m[i][k], n[k]))
 
     return(ma)
-    
+
+
+
+def p_tensor(m,n):
+    res = []
+    control = 0
+    pj = 0
+    for k in range((len(m)-1)*2):
+        f1 = m[k]
+        f2 = n[pj]
+        f = []        
+        for i in f1:
+            for j in f2:
+                f.append(multi(i,j))        
+        pj += 1
+        f2 = n[pj]
+        res.append(f)
+        f = []        
+        for i in f1:
+            for j in f2:
+                f.append(multi(i,j))                
+        pj -= 1
+        res.append(f)
+   
+    return res
 
     
 def main():
-    
-    c = [1, -2]
 
-    v_one = [[1, 2], [4, -4]]
+#numero complejo representado por una lista de dos posiciones
+    c_one = [1, -2]
+    c_two = [4, 5]
+
+#Vectores complejos son representado por vectores usuales, pero con entradas (elemntos) complejos
+    v_one = [[1, 2], [4, -4], [0,1]]
     v_two = [[4, 5], [3, 2], [3, 2]]
+
+#Matrices complejas son representados por matrices usuales pero sus filas son vectores complejos
     
     m_one = [ [[1, 2] , [3, 4]] , [[-4, 3], [-1, -2]] ]
-    m_two = [ [[-1, -2] , [-3, -4]] , [[4, -3], [1, 2]] ]
-    
+    m_two = [ [[-1, -2] , [-3, -4]] , [[4, -3], [1, 2]] ]   
 
-##    print(suma_vectores(v_one, v_two))
-##    print(inverso_vecom(v_one))
-##    print(mult_vector_esca(c, v_one))
-##    print(suma_matrices(m_one, m_two))
-##    print(inver_matrix(m_one))
-##    print(matrix_escalar(c, m_one))
-##    print(matrix_trans(m_one))
-##    print(matrix_conjugada(m_one))
-##    print(matriz_adjunta(m_one))
-##    print(producto_matrix(m_one, m_two))
-    print(accion_matrix(m_one, v_one))
+
 
 main()
