@@ -1,3 +1,4 @@
+
 #Operaciones con vectores y matricen en los complejos
 #Autor: Julian Camacho
 #Enero de 2019
@@ -161,7 +162,7 @@ def distancia_vectores(v_one,v_two):
     Distancia entre dos vectores"""
     
     r = norma_vector(suma_vectores(v_one, inverso_vecom(v_two)))
-    print (r)
+    return r
 
 
     
@@ -255,7 +256,7 @@ def accion_matrix(m,n):
     for i in range(len(m)):
         for j in range(len(n)):
             for k in range(len(n)):
-                ma[i] = suma(ma[i], multi(m[i][k], n[k]))
+                ma[i] = suma(ma[i], multi(n[i][k], m[k]))
 
     return(ma)
 
@@ -324,6 +325,7 @@ def main():
 #Vectores complejos son representado por vectores usuales, pero con entradas (elemntos) complejos
     v_one = [[1, 2], [4, -4], [0,1]]
     v_two = [[4, 5], [3, 2], [3, 2]]
+    v_thre =[[1,2],[3,4]]
 
 #Matrices complejas son representados por matrices usuales pero sus filas son vectores complejos
     
