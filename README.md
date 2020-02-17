@@ -29,14 +29,14 @@ m_one=[[[2,4],[3-8],[2.-34]],[[3,-8],[0-8],[2.0]]]
 usted puede editar todos estos elementos siempre y cuando sigan el respectivo formato.
 
 # Correr las pruebas
-El siguente paso despues de el paso inmediatamente anterior (Ejecutar o intalar) simplemente debe darle a la tecla -F5- que usualmente se encuentra en la parte superior de su teclado, el programa inmediatamente se ejecutara.
+El siguente paso despues de el paso inmediatamente anterior (Ejecutar o intalar) simplemente debe darle a la tecla -F5- que usualmente se encuentra en la parte superior de su teclado, el programa inmediatamente se ejecutara. Tenga en cuenta que la calculadora debe ser guardada con el nombre Proyecto_terminado.
 
 # Edite las pruebas
-Importe una libreria que me testea cada funcion,usted puede editar estas teniendo en cuenta que la respuesta la debe hacer mediante otra calculadora confiable y seguir el formato respectivo que requiere el programa.
+Importe una libreria que me testea cada funcion,usted puede editar estas teniendo en cuenta que la respuesta la debe hacer mediante otra calculadora confiable y seguir el formato respectivo que requiere el programa. Tenga en cuenta que la calculadora debe ser guardada con el nombre Proyecto_terminado.
 
 # Autor
 Julian Felipe Camacho Rico
-estudiante de la iunivercidad : Escuela Colombiana de Ingieneria Julio Garavito
+estudiante de la univercidad : Escuela Colombiana de Ingieneria Julio Garavito.
 Programa de Matematicas.
 
 
