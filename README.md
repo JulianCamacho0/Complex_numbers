@@ -29,7 +29,7 @@ m_one=[[[2,4],[3-8],[2.-34]],[[3,-8],[0-8],[2.0]]]
 usted puede editar todos estos elementos siempre y cuando sigan el respectivo formato.
 
 # Ejemplo
-En la carpeta -Projyecto_terminado- encontrara en la funcion principal (def main():) lo siguiente:
+En la carpeta -Proyecto_terminado- encontrara en la funcion principal (def main():) lo siguiente:
 #
 def main():
 #
@@ -54,8 +54,9 @@ def main():
 
   print(multi(c_one, c_two))
   
- donde c_one y c_two son los numeros complejos a multiplicar, print() funcion para que le apresca en pantalla el resultado. como dije anteriormente usted puede editar c_one y/o c_two.  
+donde c_one y c_two son los numeros complejos a multiplicar, print() funcion para que le apresca en pantalla el resultado. Como dije anteriormente usted puede editar c_one y/o c_two.  
 
+Analogamente se ejecutan las demas funciones, tenga en cuenta la especificacion de tipos, estas las puede encontrar en cada funcion.
 
 # Correr las pruebas
 El siguiente paso después de el paso inmediatamente anterior (Ejecutar o instalar) simplemente debe darle a la tecla -F5- que usualmente se encuentra en la parte superior de su teclado, el programa inmediatamente se ejecutara. Tenga en cuenta que la calculadora debe ser guardada con el nombre Proyecto_terminado.
