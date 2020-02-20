@@ -31,23 +31,22 @@ usted puede editar todos estos elementos siempre y cuando sigan el respectivo fo
 # Ejemplo
 En la carpeta -Projyecto_terminado- encontrara en la funcion principal (def main():) lo siguiente:
 #
-#
 def main():
+#
 #numero complejo representado por una lista de dos posiciones
     c_one = [1, -2]
     c_two = [4, 5]
-
+#
 #Vectores complejos son representado por vectores usuales, pero con entradas (elemntos) complejos
     v_one = [[1, 2], [4, -4], [0,1]]
     v_two = [[4, 5], [3, 2], [3, 2]]
     v_thre =[[1,2],[3,4]]
-
+#
 #Matrices complejas son representados por matrices usuales pero sus filas son vectores complejos
     m_one = [ [[1, 0] , [3, 4]] , [[3, -4], [-1, 0]] ]
     m_two = [ [[-1, -2] , [-3, -4]] , [[4, -3], [1, 2]] ]
-    
+#  
 main()
-#
 #
 Si desea usar la funcion de multiplicacion de complejos (def multi(v_one,v_two):) y que le aparesca en pantalla la respuesta debe hacer lo siguiente en la funcion principal:
 
