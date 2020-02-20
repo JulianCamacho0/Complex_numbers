@@ -30,8 +30,8 @@ usted puede editar todos estos elementos siempre y cuando sigan el respectivo fo
 
 # Ejemplo
 En la carpeta -Projyecto_terminado- encontrara en la funcion principal (def main():) lo siguiente:
-.
-.
+#
+#
 def main():
 #numero complejo representado por una lista de dos posiciones
     c_one = [1, -2]
@@ -47,8 +47,8 @@ def main():
     m_two = [ [[-1, -2] , [-3, -4]] , [[4, -3], [1, 2]] ]
     
 main()
-.
-. 
+#
+#
 Si desea usar la funcion de multiplicacion de complejos (def multi(v_one,v_two):) y que le aparesca en pantalla la respuesta debe hacer lo siguiente en la funcion principal:
 
 def main():
